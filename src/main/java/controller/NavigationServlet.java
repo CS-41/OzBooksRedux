@@ -37,20 +37,11 @@ public class NavigationServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//doGet(request, response);
-		
+				
 		OzBookHelper dao = new OzBookHelper();	
 		String act = request.getParameter("doThisToBook");
 		
 		String path = "/viewAllBooksServlet";
-		
-		if(act.equals("delete")) {
-		
-		}else if (act.equals("edit")) {
-			
-		}else if (act.equals("add")) {
-			path = "/index.html";
-		}
 		
 		if (act.equals("delete")) {
 			try {

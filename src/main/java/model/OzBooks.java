@@ -34,7 +34,11 @@ public class OzBooks {
 		this.bookTitle = bookTitle;
 	}
 	
-	
+	public OzBooks(String bookTitle) {
+		super();
+		this.bookTitle = bookTitle;
+	}
+		
 	public int getBookId() {
 		return bookId;
 	}
